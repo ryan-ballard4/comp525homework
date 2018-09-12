@@ -28,3 +28,15 @@ if number % 2 == 0:
     print ("True")
 else:
     print ("False")
+
+def sum_of_1_to_n(n = int):
+    """
+    Calculates the sum of integers from 1 to given n
+    n: positive integer
+    Returns: integer
+    """
+    y = 0
+    n = int (input("Choose a number:"))
+    for x in range (1 + n):
+        y = y + x
+    print ( "This is the sum of all the numbers from 1 to your chosen number:", abs(y))
