@@ -63,12 +63,26 @@ def sum_ten_random_1_10_interval( ):
     import random
     random_numbers =int
     sum = 0
-    
+
     for x in range (10):
         random_numbers = random.randint(1,10)
         print (random_numbers)
         sum = random_numbers + sum
     print ("Here is the sum for all ten random numbers:", sum)
+
+def average_odd_1_to_n(n = int):
+    """
+    Calculates the average of odd integers
+    between 1 and given n
+    n: positive integer 
+    Returns: integer
+    """
+    from statistics import mean
+    n = int (input("Choose a number:"))
+    average = int
+    average = mean (range(1, n + 1, 2))
+    print ("Here is the average of all odd integers:", abs(average))
+
 
 
 
