@@ -17,17 +17,17 @@ def circle_area(radius = float):
     area = (math.pi *(radius * radius))
     print("The area is", abs(area))
 
-def is_even(number):
+def is_even(number = int):
     """
     Checks if number is even
     number: integer
     Returns: True if number is even, False otherwise
     """
-number = int (input("Choose a number:"))
-if number % 2 == 0:
-    print ("True")
-else:
-    print ("False")
+    number = int (input("Choose a number:"))
+    if number % 2 == 0:
+        print ("True")
+    else:
+        print ("False")
 
 def sum_of_1_to_n(n = int):
     """
@@ -40,3 +40,18 @@ def sum_of_1_to_n(n = int):
     for x in range (1 + n):
         y = y + x
     print ( "This is the sum of all the numbers from 1 to your chosen number:", abs(y))
+
+def miles_per_gallon(miles = float, gallons = float):
+        """
+         Calculates miles per gallons
+         miles: positive float
+         gallons: positive float
+        """
+        original_miles = float (input("Original miles travled before trip:"))
+        driven_miles = float (input("Current number of miles on odometer:"))
+        gallons = float (input("Gallons used:"))
+
+        miles = driven_miles - original_miles
+        print ("Total miles driven", abs(miles))
+        mpg = miles / gallons
+        print ("Miles per gallon", abs(mpg))
