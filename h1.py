@@ -16,3 +16,15 @@ def circle_area(radius = float):
     area = float
     area = (math.pi *(radius * radius))
     print("The area is", abs(area))
+
+def is_even(number):
+    """
+    Checks if number is even
+    number: integer
+    Returns: True if number is even, False otherwise
+    """
+number = int (input("Choose a number:"))
+if number % 2 == 0:
+    print ("True")
+else:
+    print ("False")
