@@ -55,3 +55,21 @@ def miles_per_gallon(miles = float, gallons = float):
         print ("Total miles driven", abs(miles))
         mpg = miles / gallons
         print ("Miles per gallon", abs(mpg))
+
+def sum_ten_random_1_10_interval( ):
+    """
+    Returns sum of  ten random integers in [1, 10]   interval
+    """
+    import random
+    random_numbers =int
+    sum = 0
+    
+    for x in range (10):
+        random_numbers = random.randint(1,10)
+        print (random_numbers)
+        sum = random_numbers + sum
+    print ("Here is the sum for all ten random numbers:", sum)
+
+
+
+
